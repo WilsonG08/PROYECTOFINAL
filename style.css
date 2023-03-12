@@ -7,7 +7,7 @@
     font-family: 'Sora', sans-serif;
 }
 
-body {
+body.inicio {
     height: 100vh;
     /* background-color: #000; */
     background-image: url('./img/3.jpg');
@@ -159,4 +159,23 @@ section#hero{
         left: 2rem;
         width: unset;
     }
+}
+
+/* estilos para la pagina  */
+
+body.loginCliente {
+    background-color: #E3EAF7;
+}
+.containerLogin{
+    display: flex;
+    height: 700px;
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 150px;
+}
+
+.info{
+    background-image: url(img/loginCliente.jpg);
+    
 }
