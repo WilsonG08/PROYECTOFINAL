@@ -270,3 +270,24 @@ section#hero{
     text-transform: uppercase;
     border-radius: 25px;
 }
+
+@media(max-width: 990px){
+    .containerLogin{
+        width: 350px;
+        height: 600px;
+        margin-top: 100px;
+    }
+
+    .info{
+        display: none;
+    }
+
+    .form{
+        width: 100px;
+        padding: 30px;
+    }
+
+    .form h2{
+        margin-top: 40px;
+    }
+}
