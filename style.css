@@ -16,9 +16,9 @@
     --text-light-gray: hsl(0, 0%, 90%);
     --border-color: hsla(0, 0%, 100%, 0.25);
     --blur: blur(25px);
-    --button-hover-color: hsla(0, 0%, 0%, 0.3); 
-    --amarilloFondo : #C68B05;
-    
+    --button-hover-color: hsla(0, 0%, 0%, 0.3);
+    --amarilloFondo: #C68B05;
+
 }
 
 body.inicio {
@@ -278,7 +278,7 @@ section#hero {
     margin-bottom: 30px;
 }
 
-.inputs a:hover{
+.inputs a:hover {
     color: var(--green);
 }
 
@@ -292,13 +292,13 @@ section#hero {
     cursor: pointer;
     border-radius: 25px;
     user-select: none;
-    background:  var(--amarilloFondo);
+    background: var(--amarilloFondo);
     border: none;
     position: relative;
     overflow: hidden;
 }
 
-.btnInicioCliente a{
+.btnInicioCliente a {
     color: var(--tex-white);
 }
 
@@ -336,7 +336,7 @@ section#hero {
 }
 
 
-.form-main{
+.form-main {
     min-height: 100vh;
     padding: 60px 15px;
     display: flex;
@@ -344,7 +344,7 @@ section#hero {
     justify-content: center;
 }
 
-.form-conte{
+.form-conte {
     width: 100%;
     max-width: 450px;
     position: relative;
@@ -352,7 +352,7 @@ section#hero {
 }
 
 
-.form-conte .input-box{
+.form-conte .input-box {
     border-color: var(--glass-bg-color);
     border: 1px solid var(--border-color);
     padding: 40px 50px;
@@ -360,7 +360,7 @@ section#hero {
     backdrop-filter: var(--blur);
 }
 
-.form-conte h3{
+.form-conte h3 {
     font-size: 28px;
     text-align: center;
     line-height: 1.2;
@@ -368,15 +368,15 @@ section#hero {
     font-weight: 500;
 }
 
-.form-conte form{
+.form-conte form {
     margin: 25px 0 20px;
 }
 
-.form-conte .input-box-registroCl{
+.form-conte .input-box-registroCl {
     margin: 25px;
 }
 
-.form-conte .txtRegis{
+.form-conte .txtRegis {
     display: block;
     height: 45px;
     width: 100%;
@@ -386,16 +386,16 @@ section#hero {
     font-size: 16px;
 }
 
-.form-conte .txtRegis:focus{
+.form-conte .txtRegis:focus {
     outline: none;
 }
 
-.input-box .cuenta{
+.input-box .cuenta {
     margin-top: 10px;
     text-align: right;
 }
 
-.form-conte .btnRegCli{
+.form-conte .btnRegCli {
     height: 45px;
     width: 100%;
     font-size: 16px;
@@ -405,62 +405,62 @@ section#hero {
     cursor: pointer;
     border-radius: 25px;
     user-select: none;
-    background: linear-gradient(to right,var(--green), var(--lead));
+    background: linear-gradient(to right, var(--green), var(--lead));
     border: none;
     color: var(--tex-white);
     position: relative;
     overflow: hidden;
 }
 
-.form-conte .btnRegCli:hover{
+.form-conte .btnRegCli:hover {
     color: var(--green);
     background: var(--button-hover-color);
 }
 
-.cuenta{
+.cuenta {
     text-decoration: underline;
     color: var(--violet);
 }
 
-::placeholder{
+::placeholder {
     color: var(--tex-white);
 }
 
-p{
+p {
     color: var(--tex-white);
 }
 
 
 @media(max-width: 768px) {
     .form-main {
-      padding: 40px 15px;
+        padding: 40px 15px;
     }
-  
+
     .form-conte {
-      max-width: 100%;
+        max-width: 100%;
     }
-  
+
     .form-conte .input-box {
-      padding: 30px;
-      border-radius: 10px;
+        padding: 30px;
+        border-radius: 10px;
     }
-  
+
     .form-conte h3 {
-      font-size: 24px;
+        font-size: 24px;
     }
-  
+
     .form-conte .txtRegis {
-      height: 35px;
-      font-size: 14px;
+        height: 35px;
+        font-size: 14px;
     }
-  
+
     .form-conte .btnRegCli {
-      height: 35px;
-      font-size: 14px;
-      border-radius: 20px;
+        height: 35px;
+        font-size: 14px;
+        border-radius: 20px;
     }
-  }
-  
+}
+
 /* estilos para la pagina de login propietario  */
 
 .loginPropietario {
@@ -563,7 +563,7 @@ p{
     margin-bottom: 30px;
 }
 
-.inputs-propietario a:hover{
+.inputs-propietario a:hover {
     color: var(--green);
 }
 
@@ -577,13 +577,13 @@ p{
     cursor: pointer;
     border-radius: 25px;
     user-select: none;
-    background:  var(--blue);
+    background: var(--blue);
     border: none;
     position: relative;
     overflow: hidden;
 }
 
-.btnInicioPropietario a{
+.btnInicioPropietario a {
     color: var(--tex-white);
 }
 
@@ -621,7 +621,7 @@ p{
 }
 
 
-.form-mainPropie{
+.form-mainPropie {
     min-height: 100vh;
     padding: 60px 15px;
     display: flex;
@@ -629,7 +629,7 @@ p{
     justify-content: center;
 }
 
-.form-contePropie{
+.form-contePropie {
     width: 100%;
     max-width: 450px;
     position: relative;
@@ -637,7 +637,7 @@ p{
 }
 
 
-.form-contePropie .boxPropi{
+.form-contePropie .boxPropi {
     border-color: var(--glass-bg-color);
     border: 1px solid var(--border-color);
     padding: 40px 50px;
@@ -645,7 +645,7 @@ p{
     backdrop-filter: blur(100px);
 }
 
-.form-contePropie h3{
+.form-contePropie h3 {
     font-size: 28px;
     text-align: center;
     line-height: 1.2;
@@ -653,15 +653,15 @@ p{
     font-weight: 500;
 }
 
-.form-contePropie form{
+.form-contePropie form {
     margin: 25px 0 20px;
 }
 
-.form-contePropie .boxPropi{
+.form-contePropie .boxPropi {
     margin: 25px;
 }
 
-.form-contePropie .txtRegis{
+.form-contePropie .txtRegis {
     height: 45px;
     width: 100%;
     background-color: transparent;
@@ -670,21 +670,21 @@ p{
     font-size: 16px;
 }
 
-.form-contePropie .txtRegis:focus{
+.form-contePropie .txtRegis:focus {
     outline: none;
 }
 
-.input-boxRegisPropi .cuenta{
+.input-boxRegisPropi .cuenta {
     margin-top: 10px;
     text-align: right;
 }
 
-.boxPropi p{
+.boxPropi p {
     color: black;
 }
 
 
-.form-contePropie .btnRegCli{
+.form-contePropie .btnRegCli {
     height: 45px;
     width: 100%;
     font-size: 16px;
@@ -694,18 +694,183 @@ p{
     cursor: pointer;
     border-radius: 25px;
     user-select: none;
-    background: linear-gradient(to right,var(--green), var(--lead));
+    background: linear-gradient(to right, var(--green), var(--lead));
     border: none;
     color: var(--tex-white);
     position: relative;
     overflow: hidden;
 }
 
-.form-contePropie .btnRegCli:hover{
+.form-contePropie .btnRegCli:hover {
     color: var(--green);
     background: var(--button-hover-color);
 }
 
-.input-box-registroPropie ::placeholder{
+.input-box-registroPropie ::placeholder {
     color: black;
+}
+
+@media(max-width: 768px) {
+    .form-mainPropie {
+        padding: 40px 15px;
+    }
+
+    .form-contePropie {
+        max-width: 100%;
+    }
+
+    .form-contePropie .input-box {
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .form-contePropie h3 {
+        font-size: 24px;
+    }
+
+    .form-contePropie .txtRegis {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .form-contePropie .btnRegCli {
+        height: 35px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+}
+
+
+/* pagina de inicio del propietario */
+
+.inicioCliente {
+    height: 100vh;
+    /* background-color: #000; */
+    background-color: #000000;
+    /* background-size: contain; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inicioClienteHer{
+    background-color: #847086;
+}
+
+/* Estilos de la sección de menús */
+section.menus {
+    display: flex;
+    justify-content: center;
+
+}
+
+section.menus>div {
+    flex-basis: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section.menus .btnEditar {
+    margin-top: 10px;
+}
+
+/* Ocultar el formulario por defecto */
+.menu-editar-oculto {
+    display: none;
+}
+
+/* Mostrar el formulario cuando se hace clic en el botón "Editar" */
+.btnEditar:focus+.menu-editar-oculto {
+    display: block;
+}
+
+.btnEditar {
+    height: 45px;
+    width: 50%;
+    font-size: 16px;
+    border-radius: 25px;
+    background: linear-gradient(to right, var(--green), var(--lead));
+    border: none;
+    color: var(--tex-white);
+}
+
+.btnEditar a {
+    background-color: #FFA500;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Estilos de la sección de calificaciones */
+
+.calificaciones {
+    display: flex;
+    /* background-color: #847086; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.inicioCliente h3 {
+    color: white;
+    /* background-color: #847086; */
+    text-align: center;
+  }
+  
+
+.encebollado,
+.burguer,
+.Sanduche {
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagenPlato img {
+    width: 100%;
+    height: auto;
+}
+
+.infoPlato {
+    background-color: #FFF;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.infoPlato h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.infoPlato h6 {
+    margin-top: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.infoPlato img {
+    width: 80px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.txtRegisPlat {
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 16px;
+}
+
+/* Estilos para dispositivos móviles */
+
+@media (max-width: 767px) {
+
+    .links {
+        display: none;
+    }
 }
