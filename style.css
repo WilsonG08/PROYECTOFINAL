@@ -16,7 +16,8 @@
     --text-light-gray: hsl(0, 0%, 90%);
     --border-color: hsla(0, 0%, 100%, 0.25);
     --blur: blur(25px);
-    --button-hover-color: hsla(0, 0%, 0%, 0.3);
+    --button-hover-color: hsla(0, 0%, 0%, 0.3); 
+    --amarilloFondo : #C68B05;
 }
 
 body.inicio {
@@ -71,15 +72,15 @@ header {
 }
 
 .navbar .toggle_btn {
-    color: #fff;
+    color: var(--tex-white);
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
 
 .action_btn {
-    background-color: orange;
-    color: #fff;
+    background-color: var(--amarilloFondo);
+    color: var(--tex-white);
     padding: 0.5rem;
     border: none;
     outline: none;
@@ -92,7 +93,7 @@ header {
 
 .action_btn:hover {
     scale: 1.05;
-    color: #fff;
+    color: var(--tex-white);
 }
 
 .action_btn:active {
@@ -181,7 +182,7 @@ section#hero {
     height: 100vh;
     /* background-color: #000; */
     background-image: url('./img/3.jpg');
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     background-size: cover;
     font-family: 'Sora', sans-serif;
     /* background-size: contain; */
@@ -195,11 +196,11 @@ section#hero {
     width: 1000px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     margin: auto;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .info {
-    background-color: #C68B05;
+    background-color: var(--amarilloFondo);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,11 +239,11 @@ section#hero {
     padding: 100px 100px;
     width: 50%;
     text-align: center;
-    background-color: #dad4d4;
+    backdrop-filter: blur(50px);
 }
 
 .form h2 {
-    color: #C68B05;
+    color: var(--amarilloFondo);
     font-size: 40px;
     margin-bottom: 25px;
 }
@@ -260,7 +261,7 @@ section#hero {
 
 .box {
     outline: none;
-    border-color: #C68B05;
+    border-color: var(--amarilloFondo);
     border-width: 0px 0px 0px 10px;
     border-style: solid;
     padding: 15px 35px;
@@ -269,11 +270,15 @@ section#hero {
 }
 
 .inputs a {
-    color: var(--violet);
+    color: var(--tex-white);
     text-decoration: none;
     text-align: left;
     font-size: 15px;
     margin-bottom: 30px;
+}
+
+.inputs a:hover{
+    color: var(--green);
 }
 
 .btnInicioCliente {
@@ -286,7 +291,7 @@ section#hero {
     cursor: pointer;
     border-radius: 25px;
     user-select: none;
-    background: #C68B05;
+    background:  var(--amarilloFondo);
     border: none;
     position: relative;
     overflow: hidden;
