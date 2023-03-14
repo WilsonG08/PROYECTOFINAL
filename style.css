@@ -62,6 +62,8 @@ header {
     justify-content: space-between;
 }
 
+
+
 .navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
@@ -709,7 +711,581 @@ p {
 .input-box-registroPropie ::placeholder {
     color: black;
 }
+/* CSS DE INICIO CLIENTE */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Sora', sans-serif;
+}
+
+/* aqui se cambio el body */
+.clase-wilson{
+    background-color: #080202;
+    font-family: 'Sora', sans-serif;
+  } 
+  
+  .container{
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  /* PARA LAS FELCHAS DE DESPLEGAR */
+  .swiper-button-prev::after{
+      font-size: 25px;    
+  }
+  
+  .swiper-button-next::after{
+      font-size: 25px;    
+  }
+  
+  .swiper-button-next{
+      color: #DB241B;
+  }
+  
+  .swiper-button-prev{
+      color: #DB241B;
+  }
+  /* F. FLECHAS */
+  
+  /* COLOR DE LOS BULLETS */
+  .swiper-pagination-bullet{
+      background-color: #D3D2D2;
+      opacity: 1;
+  }
+  
+  .swiper-pagination-bullet-active{
+      background-color: #DB241B;
+  }
+  /* F.C BULLETS */
+  
+  /* MENU */
+  
+  .menu{
+      position: relative;
+      top: 50px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+  }
+  
+  .navbar{
+      display: flex;
+  }
+  
+  .menu-1{
+      margin-right: 180px;
+  }
+  
+  .menu-2{
+      margin-left: 180px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .logo-1{
+      width: 0;
+  }
+  
+  .logo-2{
+      width: 150px;
+  }
+  
+  .socials{
+      display: flex;
+  }
+  
+  .social{
+      margin: 0 10px;
+      height: 40px;
+      width: 40px;
+      border: 1px solid #DB241B;
+      border-radius: 50%;
+  }
+  
+  .social:hover{
+      background-color: #DB241B;
+  }
+  
+  .social img{
+      margin: 8px 0 0 10px;
+  }
+  
+  .menu .navbar ul li{
+      position: relative;
+      float: left;
+  }
+  
+  .menu .navbar ul li a{
+      font-size: 18px;
+      padding: 20px;
+      color: #FFFFFF;
+      display: block;
+  }
+  
+  .menu .navbar ul li a:hover{
+      color: #DB241B;
+  }
+  
+  #menu{
+      display: none;
+  }
+  
+  .menu-icono{
+      width: 50px;
+  }
+  
+  .menu label{
+      cursor: pointer;
+      display: none;
+  }
+  
+  /* HEADER */
+  
+  .header-content{
+      margin-top: 150px;
+      padding-bottom: 50px;
+  }
+  
+  /* SLIDDER */
+  
+  .slider{
+      display: flex;
+      align-items: center;
+  }
+  
+  .slider-txt{
+      margin-left: 85px;
+      width: 50%;
+  }
+  
+  .slider-txt h1{
+      font-size: 70px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-weight: 800;
+  }
+  
+  .slider-txt p{
+      font-size: 18px;
+      color: #a7a7a7;
+  }
+  
+  .botones{
+      margin-top: 50px;
+  }
+  
+  .btn-1{
+      display: inline-block;
+      padding: 15px 35px;
+      border: 2px solid #DB241B;
+      color: #FFFFFF;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-right: 20px;
+      border-radius: 50px;
+  }
+  
+  .btn-1:hover{
+      background-color: #DB241B;
+  }
+  
+  .slider-img{
+      width: 50%;
+  }
+  
+  .slider-img img{
+      margin-right: 225px;
+      width: 550px;
+  }
+  
+  /* TABS */
+  
+  .products{
+      background-color: #0d0d0d;
+  }
+  
+  .tabs{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 100px 0px;
+  }
+  
+  .tabs label{
+      width: 15%;
+      order: 1;
+      display: block;
+      padding: 20px 0;
+      text-align: center;
+      cursor: pointer;
+      color: #a7a7a7;
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: uppercase;
+      transition: background ease 0.2s;
+  }
+  
+  .tabs .tab{
+      order: 99;
+      flex-grow: 1;
+      width: 100%;
+      display: none;
+      padding-top: 25px;
+  }
+  
+  /* desaparesca las bolitas de los check */
+  
+  .tabs input[type="radio"] {
+      display: none;
+  }
+  
+  .tabs input[type="radio"]:checked + label {
+      border-bottom: 2px solid #DB241B;
+      color: #FFFFFF;
+  }
+  
+  /* añadido al final, despues del javaScript */
+  .tabs input[type="radio"]:checked + label + .tab {
+      display: block;
+  }
+  
+  
+  /* trabajo en los productos */
+  
+  .product{
+      display: flex;
+      align-items: center;
+      padding: 25px;
+      margin: 0 10px;
+  }
+  
+  .product-img{
+      width: 50%;
+      text-align: left;
+  }
+  
+  .product-img h4{
+      display: inline-block;
+      padding: 5px 7px;
+      line-height: 15px;
+      color: #FFFFFF;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 800;
+      border: 2px solid #555555;
+      border-radius: 10px;
+      margin-bottom: 50px;
+  }
+  
+  .product-img img{
+      width: 150px;
+      height: 120px;
+  }
+  
+  .product-txt{
+      width: 50%;
+      margin-left: 10px;
+      text-align: left;
+  }
+  
+  .product-txt h4{
+      color: #FFFFFF;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 5px;
+  }
+  
+  .product-txt p{
+      color: #a7a7a7;
+      font-size: 16px;
+      margin-bottom: 15px;
+  }
+  
+  .product-txt span{
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 800;
+  }
+  
+  .infos{
+      padding: 100px 0px;
+      display: flex;
+      align-items: center;
+  }
+  
+  .info-img{
+      width: 50%;
+  }
+  
+  .info-img img{
+      width: 500px;
+      height: 250px;
+  }
+  
+  .info-txt{
+      width: 50%;
+  }
+  
+  .info-txt h2{
+      font-size: 75px;
+      color: #FFFFFF;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+  }
+  
+  .info-txt p{
+      font-size: 18px;
+      color: #a7a7a7;
+      margin-bottom: 58px;
+  }
+  
+  .btn-2{
+      display: inline-block;
+      padding: 15px 35px;
+      background-color: #DB241B;
+      color: #FFFFFF;
+      font-weight: 800;
+      text-transform: uppercase;
+      border-radius: 50px;
+  }
+  
+  .btn-2:hover{
+      background-color: #AB1C15;
+  }
+  
+  /* HORARIOS */
+  
+  .horario{
+      padding: 100px 0px;
+      background-color: #0d0d0d;
+  }
+  
+  .horario-info h2{
+      font-size: 75px;
+      color: #FFFFFF;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+  }
+  
+  .horario-txt{
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .txt{
+      color: #FFFFFF;
+  }
+  
+  .txt h4{
+      font-size: 18px;
+      color: #a7a7a7;
+      margin-bottom: 30px;
+  }
+  
+  .txt p{
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 15px;
+  }
+  
+  /* MAPA */
+  /* aqui le puede dar otro color de gris al mapa */
+  
+  .footer{
+      padding: 100px 0px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .links h4{
+      color: #FFFFFF;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+  }
+  
+  .links ul li a{
+      color: #FFFFFF;
+      font-size: 16px;
+      margin-bottom: 5px;
+      display: inline-block;
+  }
+  
+  
+  /* PARA QUE SEA RESPONSIVE */
+  
+  @media(max-width: 991px){
+      .menu{
+          padding: 20px;
+          justify-content: space-between;
+      }
+  
+      .menu-2{
+          display: none;
+      }
+  
+      .logo-1{
+          width: 100px;
+      }
+  
+      .logo-2{
+          width: 0;
+      }
+  
+      .menu label{
+          display: initial;
+      }
+  
+      .menu .navbar{
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background-color: #181818;
+          display: none;
+      }
+  
+      .menu .navbar ul li{
+          width: 100%;
+      }
+  
+      #menu:checked ~ .navbar{
+          display: initial;
+      }
+  
+      .header-content{
+          padding: 30px;
+          margin-top: 100px;
+      }
+  
+      .slider{
+          flex-direction: column;
+      }
+  
+      .slider-txt{
+          margin-left: 0;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 50px;
+      }
+  
+      .slider-txt h1{
+          font-size: 50px;
+      }
+  
+      .slider-txt p{
+          font-size: 16px;
+      }
+  
+      .btn-1{
+          padding: 10px 25px;
+          font-size: 14px;
+      }
+  
+      .slider-img{
+          width: 100%;
+          text-align: center;
+      }
+  
+      .slider-img img{
+          margin-right: 0px;
+          width: 300px;
+      }
+  
+      /* para que aparezca separado */
+      /* no creo que sea necesario */
+  
+      /* .swiper-horizontal > .swiper-pagination-bullets,
+      .swiper-pagination-bullets, .swiper-pagination-horizontal,
+      .swiper-pagination-custom, 
+      .swiper-pagination-fraction{
+          bottom: -7px;
+      } */
+  
+      .tabs{
+          padding: 50px 30px;
+      }
+  
+      .tabs label{
+          width: 33%;
+      }
+  
+      .info{
+          padding: 30px;
+          flex-direction: column;
+      }
+  
+      .info-img{
+          width: 100%;
+          text-align: center;
+      }
+  
+      .info-img img{
+          width: 400px;
+          height: 200px;
+          margin-bottom: 25px;
+      }
+  
+      .info-txt{
+          width: 100%;
+          text-align: center;
+      }
+  
+      .info-txt h2{
+          font-size: 50px;
+      }
+  
+      .info-txt p{
+          font-size: 16px;
+      }
+  
+      .btn-1{
+          font-size: 16px;
+      }
+  
+      .horario{
+          padding: 30px;
+          text-align: center;
+      }
+  
+      .horario-info h2{
+          font-size: 50px;
+          margin-bottom: 15px;
+      }
+  
+      .horario-txt{
+          flex-direction: column;
+      }
+  
+      .socials{
+          justify-content: center;
+      }
+  
+      .social img{
+          margin: 8px 0 0 0;
+      }
+  
+      .footer{
+          padding: 30px;
+          flex-direction: column;
+          text-align: center;
+      }
+  
+      .links h4{
+          margin: 25px 0px 10px 0px;
+      }
+  }
+  
+=======
 @media(max-width: 768px) {
     .form-mainPropie {
         padding: 40px 15px;
@@ -879,6 +1455,7 @@ section.menus .btnEditar {
         display: none;
     }
 }
+<<<<<<< HEAD
 @media(max-width: 576px) {
     .dropdown_menu {
         left: 2rem;
@@ -890,6 +1467,8 @@ section.menus .btnEditar {
 
 
 
+=======
+>>>>>>> 414225092f67c4d4f3bfa6113b492f68ef4b306d
 /*Login administrador*/
 
 .loginAdministrador {
@@ -904,9 +1483,6 @@ section.menus .btnEditar {
     background-position: center;
     background-repeat: no-repeat;
 }
- HEAD
-
-
 .containerLoginAdministrador {
     display: flex;
     height: 600px;
@@ -914,6 +1490,8 @@ section.menus .btnEditar {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     margin: auto;
     margin-top: 30px;
+    justify-content: center;
+align-items: center;
 }
 .txt-1 {
     color: #fff;
@@ -1016,26 +1594,60 @@ section.menus .btnEditar {
     color: #fff;
     font-size: 18px;
 }
-
-@media(max-width: 768px) {
+@media only screen and (min-width: 1024px) {
+    .loginAdministrador {
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .containerLoginAdministrador {
-        width: 350px;
-        height: 500px;
-        margin-top: 100px;
+        height: 600px;
+        width: 1000px;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-administrador {
+        width: 50%;
+    }
+    .info-administrador {
+        width: 50%;
+        padding: 100px;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (max-width: 1023px) {
+    .loginAdministrador {
+        height: auto;
+        min-height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .containerLoginAdministrador {
+        height: auto;
+        max-width: 800px;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .form-administrador {
         width: 100%;
-        padding: 30px;
-    }
-
-    .form-administrador h2 {
-        margin-top: 40px;
+        padding: 50px;
     }
     .info-administrador {
-        display: none;
+        width: 100%;
+        padding: 50px;
     }
-/*Pagina Inicio Adminsitrador*/
 }
+/*Pagina Inicio Adminsitrador*/
 body.Administrador {
     display: flex;
     height: 100vh;
@@ -1095,6 +1707,80 @@ body.Administrador {
   .Imagen1.configuracion:hover p{
     color: blue;
 }
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+  /* Centra el contenido verticalmente */
+  .Administrador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 100px;
+  }
+  
+  /* Ajusta el margen superior del título */
+  .Titulo-administrador {
+    margin-top: 0;
+  }
+  
+  /* Ajusta el tamaño de la fuente del título */
+  .Titulo-administrador h1 {
+    font-size: 40px;
+  }
+  
+  /* Ajusta el margen superior de la sección de imágenes */
+  .Administrador1 {
+    margin-top: 100px;
+    height: auto;
+  }
+  
+  /* Ajusta el margen entre las imágenes */
+  .Imagen1 img {
+    margin: 0 10px;
+  }
+  
+  /* Ajusta el tamaño de la fuente del texto debajo de las imágenes */
+  .Imagen1 p {
+    font-size: 12px;
+  }
+  
+  /* Ajusta el tamaño de la fuente del botón debajo de las imágenes */
+  .Imagen1 a {
+    font-size: 12px;
+  }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media screen and (min-width: 768px) {
+  /* Centra el contenido horizontalmente */
+  .Administrador {
+    display: flex;
+    height: 100vh;
+    background-image: url('./img/Administrador.jpg');
+    background-size: cover;
+    font-family: 'Sora', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Ajusta el tamaño de la fuente del título */
+  .Titulo-administrador h1 {
+    font-size: 60px;
+  }
+  
+  /* Ajusta el margen superior de la sección de imágenes */
+  .Administrador1 {
+    margin-top: 300px;
+    height: 300px;
+  }
+  
+  /* Ajusta el margen entre las imágenes */
+  .Imagen1 img {
+    margin: 0 150px;
+  }
+}
+/*Boton Configuración*/
 body.Fondo {
     display: flex;
     height: 100vh;
@@ -1144,6 +1830,7 @@ body.Fondo {
   .Botones:hover a{
     color: red;
 }
+<<<<<<< HEAD
 
 /* milocal interfaz */
 
@@ -1256,3 +1943,36 @@ body.Fondo {
     }
     
   }
+=======
+@media screen and (min-width: 992px) {
+  .Botones {
+    font-size: 2.5vw;
+    padding: 1vw;
+  }
+  .Botones a {
+    font-size: 2.5vw;
+    padding: 1vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Botones {
+    font-size: 2vw;
+    padding: 0.8vw;
+  }
+  .Botones a {
+    font-size: 2vw;
+    padding: 0.8vw;
+  }
+}
+
+.Botones:hover a {
+  color: red;
+}
+
+
+
+
+
+
+>>>>>>> 414225092f67c4d4f3bfa6113b492f68ef4b306d
