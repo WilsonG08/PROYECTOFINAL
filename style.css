@@ -16,9 +16,9 @@
     --text-light-gray: hsl(0, 0%, 90%);
     --border-color: hsla(0, 0%, 100%, 0.25);
     --blur: blur(25px);
-    --button-hover-color: hsla(0, 0%, 0%, 0.3); 
-    --amarilloFondo : #C68B05;
-    
+    --button-hover-color: hsla(0, 0%, 0%, 0.3);
+    --amarilloFondo: #C68B05;
+
 }
 
 body.inicio {
@@ -280,7 +280,7 @@ section#hero {
     margin-bottom: 30px;
 }
 
-.inputs a:hover{
+.inputs a:hover {
     color: var(--green);
 }
 
@@ -294,13 +294,13 @@ section#hero {
     cursor: pointer;
     border-radius: 25px;
     user-select: none;
-    background:  var(--amarilloFondo);
+    background: var(--amarilloFondo);
     border: none;
     position: relative;
     overflow: hidden;
 }
 
-.btnInicioCliente a{
+.btnInicioCliente a {
     color: var(--tex-white);
 }
 
@@ -338,7 +338,7 @@ section#hero {
 }
 
 
-.form-main{
+.form-main {
     min-height: 100vh;
     padding: 60px 15px;
     display: flex;
@@ -346,7 +346,7 @@ section#hero {
     justify-content: center;
 }
 
-.form-conte{
+.form-conte {
     width: 100%;
     max-width: 450px;
     position: relative;
@@ -354,7 +354,7 @@ section#hero {
 }
 
 
-.form-conte .input-box{
+.form-conte .input-box {
     border-color: var(--glass-bg-color);
     border: 1px solid var(--border-color);
     padding: 40px 50px;
@@ -362,7 +362,7 @@ section#hero {
     backdrop-filter: var(--blur);
 }
 
-.form-conte h3{
+.form-conte h3 {
     font-size: 28px;
     text-align: center;
     line-height: 1.2;
@@ -370,15 +370,15 @@ section#hero {
     font-weight: 500;
 }
 
-.form-conte form{
+.form-conte form {
     margin: 25px 0 20px;
 }
 
-.form-conte .input-box-registroCl{
+.form-conte .input-box-registroCl {
     margin: 25px;
 }
 
-.form-conte .txtRegis{
+.form-conte .txtRegis {
     display: block;
     height: 45px;
     width: 100%;
@@ -388,16 +388,16 @@ section#hero {
     font-size: 16px;
 }
 
-.form-conte .txtRegis:focus{
+.form-conte .txtRegis:focus {
     outline: none;
 }
 
-.input-box .cuenta{
+.input-box .cuenta {
     margin-top: 10px;
     text-align: right;
 }
 
-.form-conte .btnRegCli{
+.form-conte .btnRegCli {
     height: 45px;
     width: 100%;
     font-size: 16px;
@@ -407,62 +407,62 @@ section#hero {
     cursor: pointer;
     border-radius: 25px;
     user-select: none;
-    background: linear-gradient(to right,var(--green), var(--lead));
+    background: linear-gradient(to right, var(--green), var(--lead));
     border: none;
     color: var(--tex-white);
     position: relative;
     overflow: hidden;
 }
 
-.form-conte .btnRegCli:hover{
+.form-conte .btnRegCli:hover {
     color: var(--green);
     background: var(--button-hover-color);
 }
 
-.cuenta{
+.cuenta {
     text-decoration: underline;
     color: var(--violet);
 }
 
-::placeholder{
+::placeholder {
     color: var(--tex-white);
 }
 
-p{
+p {
     color: var(--tex-white);
 }
 
 
 @media(max-width: 768px) {
     .form-main {
-      padding: 40px 15px;
+        padding: 40px 15px;
     }
-  
+
     .form-conte {
-      max-width: 100%;
+        max-width: 100%;
     }
-  
+
     .form-conte .input-box {
-      padding: 30px;
-      border-radius: 10px;
+        padding: 30px;
+        border-radius: 10px;
     }
-  
+
     .form-conte h3 {
-      font-size: 24px;
+        font-size: 24px;
     }
-  
+
     .form-conte .txtRegis {
-      height: 35px;
-      font-size: 14px;
+        height: 35px;
+        font-size: 14px;
     }
-  
+
     .form-conte .btnRegCli {
-      height: 35px;
-      font-size: 14px;
-      border-radius: 20px;
+        height: 35px;
+        font-size: 14px;
+        border-radius: 20px;
     }
-  }
-  
+}
+
 /* estilos para la pagina de login propietario  */
 
 .loginPropietario {
@@ -565,7 +565,7 @@ p{
     margin-bottom: 30px;
 }
 
-.inputs-propietario a:hover{
+.inputs-propietario a:hover {
     color: var(--green);
 }
 
@@ -579,13 +579,13 @@ p{
     cursor: pointer;
     border-radius: 25px;
     user-select: none;
-    background:  var(--blue);
+    background: var(--blue);
     border: none;
     position: relative;
     overflow: hidden;
 }
 
-.btnInicioPropietario a{
+.btnInicioPropietario a {
     color: var(--tex-white);
 }
 
@@ -623,7 +623,7 @@ p{
 }
 
 
-.form-mainPropie{
+.form-mainPropie {
     min-height: 100vh;
     padding: 60px 15px;
     display: flex;
@@ -631,7 +631,7 @@ p{
     justify-content: center;
 }
 
-.form-contePropie{
+.form-contePropie {
     width: 100%;
     max-width: 450px;
     position: relative;
@@ -639,7 +639,7 @@ p{
 }
 
 
-.form-contePropie .boxPropi{
+.form-contePropie .boxPropi {
     border-color: var(--glass-bg-color);
     border: 1px solid var(--border-color);
     padding: 40px 50px;
@@ -647,7 +647,7 @@ p{
     backdrop-filter: blur(100px);
 }
 
-.form-contePropie h3{
+.form-contePropie h3 {
     font-size: 28px;
     text-align: center;
     line-height: 1.2;
@@ -655,15 +655,15 @@ p{
     font-weight: 500;
 }
 
-.form-contePropie form{
+.form-contePropie form {
     margin: 25px 0 20px;
 }
 
-.form-contePropie .boxPropi{
+.form-contePropie .boxPropi {
     margin: 25px;
 }
 
-.form-contePropie .txtRegis{
+.form-contePropie .txtRegis {
     height: 45px;
     width: 100%;
     background-color: transparent;
@@ -672,21 +672,21 @@ p{
     font-size: 16px;
 }
 
-.form-contePropie .txtRegis:focus{
+.form-contePropie .txtRegis:focus {
     outline: none;
 }
 
-.input-boxRegisPropi .cuenta{
+.input-boxRegisPropi .cuenta {
     margin-top: 10px;
     text-align: right;
 }
 
-.boxPropi p{
+.boxPropi p {
     color: black;
 }
 
 
-.form-contePropie .btnRegCli{
+.form-contePropie .btnRegCli {
     height: 45px;
     width: 100%;
     font-size: 16px;
@@ -696,22 +696,23 @@ p{
     cursor: pointer;
     border-radius: 25px;
     user-select: none;
-    background: linear-gradient(to right,var(--green), var(--lead));
+    background: linear-gradient(to right, var(--green), var(--lead));
     border: none;
     color: var(--tex-white);
     position: relative;
     overflow: hidden;
 }
 
-.form-contePropie .btnRegCli:hover{
+.form-contePropie .btnRegCli:hover {
     color: var(--green);
     background: var(--button-hover-color);
 }
 
-.input-box-registroPropie ::placeholder{
+.input-box-registroPropie ::placeholder {
     color: black;
 }
 
+<<<<<<< HEAD
 
 /* CSS DE INICIO CLIENTE */
 
@@ -1287,3 +1288,429 @@ p{
       }
   }
   
+=======
+@media(max-width: 768px) {
+    .form-mainPropie {
+        padding: 40px 15px;
+    }
+
+    .form-contePropie {
+        max-width: 100%;
+    }
+
+    .form-contePropie .input-box {
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .form-contePropie h3 {
+        font-size: 24px;
+    }
+
+    .form-contePropie .txtRegis {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .form-contePropie .btnRegCli {
+        height: 35px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+}
+
+
+/* pagina de inicio del propietario */
+
+.inicioPropietario {
+    height: 100vh;
+    /* background-color: #000; */
+    background-color: #000000;
+}
+
+.inicioPropietarioHer{
+    background-color: #847086;
+}
+
+/* Estilos de la sección de menús */
+section.menus {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+}
+
+section.menus>div {
+    flex-basis: 50%;
+    color: var(--tex-white);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section.menus .btnEditar {
+    margin-top: 10px;
+}
+
+/* Ocultar el formulario por defecto */
+.menu-editar-oculto {
+    display: none;
+}
+
+/* Mostrar el formulario cuando se hace clic en el botón "Editar" */
+.btnEditar:focus+.menu-editar-oculto {
+    display: block;
+}
+
+.btnEditar {
+    height: 45px;
+    width: 50%;
+    font-size: 16px;
+    border-radius: 25px;
+    background: linear-gradient(to right, var(--green), var(--lead));
+    border: none;
+    color: var(--tex-white);
+}
+
+.btnEditar a {
+    background-color: #FFA500;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Estilos de la sección de calificaciones */
+
+.calificaciones {
+    display: flex;
+    /* background-color: #847086; */
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.inicioPriopietario h3 {
+    color: white;
+    background-color: black;
+    /* background-color: #847086; */
+    text-align: center;
+  }
+  
+
+.encebollado,
+.burguer,
+.Sanduche {
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagenPlato img {
+    width: 100%;
+    height: auto;
+}
+
+.infoPlato {
+    background-color: #FFF;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.infoPlato h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.infoPlato h6 {
+    margin-top: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.infoPlato img {
+    width: 80px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.txtRegisPlat {
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 16px;
+}
+
+/* Estilos para dispositivos móviles */
+
+@media (max-width: 767px) {
+
+    .links {
+        display: none;
+    }
+}
+
+
+
+
+
+/*Login administrador*/
+
+.loginAdministrador {
+    display: flex;
+    height: 100vh;
+    /* background-color: #000; */
+    background-image: url('./img/loginAdministrador.jpg');
+    /* backdrop-filter: blur(5px); */
+    background-size: cover;
+    font-family: 'Sora', sans-serif;
+    /* background-size: contain; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ HEAD
+
+
+.containerLoginAdministrador {
+    display: flex;
+    height: 600px;
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 30px;
+}
+.txt-1 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.txt-2 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.form-administrador {
+    padding: 100px 100px;
+    width: 50%;
+    text-align: center;
+    backdrop-filter: blur(50px);
+}
+
+.form-administrador h2 {
+    color: red;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.inputs-administrador {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-administrador {
+    outline: none;
+    border-color: red;
+    border-width: 0px 0px 0px 10px;
+    border-style: solid;
+    padding: 15px 35px;
+    margin-bottom: 30px;
+    background-color: var(--lead);
+}
+
+.inputs-Administrador a {
+    color: var(--tex-white);
+    text-decoration: none;
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.inputs-administrador a:hover{
+    color: blue;
+}
+
+.btnInicioAdministrador {
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    background-color: red ;
+}
+.info-administrador {
+    background-color: red;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 100px;
+    width: 50%;
+}
+
+.txt-1 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.info-administrador h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.info-administrador hr {
+    width: 55px;
+    border: 4px solid #fff;
+    margin-left: 170px;
+    margin-bottom: 25px;
+}
+
+.txt-2 {
+    color: #fff;
+    font-size: 18px;
+}
+
+@media(max-width: 768px) {
+    .containerLoginAdministrador {
+        width: 350px;
+        height: 500px;
+        margin-top: 100px;
+    }
+    .form-administrador {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .form-administrador h2 {
+        margin-top: 40px;
+    }
+    .info-administrador {
+        display: none;
+    }
+/*Pagina Inicio Adminsitrador*/
+}
+body.Administrador {
+    display: flex;
+    height: 100vh;
+    background-image: url('./img/Administrador.jpg');
+    background-size: cover;
+    font-family: 'Sora', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Titulo-administrador {
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.Titulo-administrador h1 {
+    font-size: 60px;
+    color: orange;
+}
+/* Estilos para la sección de imágenes del administrador */
+.Administrador1 {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: rgb(187, 37, 187);
+    height: 300px;
+    width: 100%;
+  }
+  
+  /* Estilos para las imágenes del administrador */
+  .Imagen1 img {
+    height: 150px;
+    margin: 0 150px; /* Añade un margen de 10px entre las imágenes */
+  }
+  .Imagen1 p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+  }
+.Imagen1{
+    display: inline-block;
+    text-align: center;
+}
+.Imagen1 a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .Imagen1.configuracion:hover p{
+    color: blue;
+}
+body.Fondo {
+    display: flex;
+    height: 100vh;
+    background-image: url('./img/configuracionad.jpg');
+    background-size: cover;
+    font-family: 'Sora', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Contenedor-botones {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Botones {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    border: 2px solid #007bff;
+    background-color: transparent;
+    color: #010101;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .Botones a{
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    color: #010101;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .Botones:hover a{
+    color: red;
+}
+>>>>>>> master
