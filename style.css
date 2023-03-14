@@ -711,9 +711,6 @@ p {
 .input-box-registroPropie ::placeholder {
     color: black;
 }
-
-<<<<<<< HEAD
-
 /* CSS DE INICIO CLIENTE */
 
 * {
@@ -1454,11 +1451,6 @@ section.menus .btnEditar {
         display: none;
     }
 }
-
-
-
-
-
 /*Login administrador*/
 
 .loginAdministrador {
@@ -1473,9 +1465,6 @@ section.menus .btnEditar {
     background-position: center;
     background-repeat: no-repeat;
 }
- HEAD
-
-
 .containerLoginAdministrador {
     display: flex;
     height: 600px;
@@ -1483,6 +1472,8 @@ section.menus .btnEditar {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     margin: auto;
     margin-top: 30px;
+    justify-content: center;
+align-items: center;
 }
 .txt-1 {
     color: #fff;
@@ -1585,26 +1576,60 @@ section.menus .btnEditar {
     color: #fff;
     font-size: 18px;
 }
-
-@media(max-width: 768px) {
+@media only screen and (min-width: 1024px) {
+    .loginAdministrador {
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .containerLoginAdministrador {
-        width: 350px;
-        height: 500px;
-        margin-top: 100px;
+        height: 600px;
+        width: 1000px;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-administrador {
+        width: 50%;
+    }
+    .info-administrador {
+        width: 50%;
+        padding: 100px;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (max-width: 1023px) {
+    .loginAdministrador {
+        height: auto;
+        min-height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .containerLoginAdministrador {
+        height: auto;
+        max-width: 800px;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .form-administrador {
         width: 100%;
-        padding: 30px;
-    }
-
-    .form-administrador h2 {
-        margin-top: 40px;
+        padding: 50px;
     }
     .info-administrador {
-        display: none;
+        width: 100%;
+        padding: 50px;
     }
-/*Pagina Inicio Adminsitrador*/
 }
+/*Pagina Inicio Adminsitrador*/
 body.Administrador {
     display: flex;
     height: 100vh;
@@ -1664,6 +1689,80 @@ body.Administrador {
   .Imagen1.configuracion:hover p{
     color: blue;
 }
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+  /* Centra el contenido verticalmente */
+  .Administrador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 100px;
+  }
+  
+  /* Ajusta el margen superior del título */
+  .Titulo-administrador {
+    margin-top: 0;
+  }
+  
+  /* Ajusta el tamaño de la fuente del título */
+  .Titulo-administrador h1 {
+    font-size: 40px;
+  }
+  
+  /* Ajusta el margen superior de la sección de imágenes */
+  .Administrador1 {
+    margin-top: 100px;
+    height: auto;
+  }
+  
+  /* Ajusta el margen entre las imágenes */
+  .Imagen1 img {
+    margin: 0 10px;
+  }
+  
+  /* Ajusta el tamaño de la fuente del texto debajo de las imágenes */
+  .Imagen1 p {
+    font-size: 12px;
+  }
+  
+  /* Ajusta el tamaño de la fuente del botón debajo de las imágenes */
+  .Imagen1 a {
+    font-size: 12px;
+  }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media screen and (min-width: 768px) {
+  /* Centra el contenido horizontalmente */
+  .Administrador {
+    display: flex;
+    height: 100vh;
+    background-image: url('./img/Administrador.jpg');
+    background-size: cover;
+    font-family: 'Sora', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Ajusta el tamaño de la fuente del título */
+  .Titulo-administrador h1 {
+    font-size: 60px;
+  }
+  
+  /* Ajusta el margen superior de la sección de imágenes */
+  .Administrador1 {
+    margin-top: 300px;
+    height: 300px;
+  }
+  
+  /* Ajusta el margen entre las imágenes */
+  .Imagen1 img {
+    margin: 0 150px;
+  }
+}
+/*Boton Configuración*/
 body.Fondo {
     display: flex;
     height: 100vh;
@@ -1713,4 +1812,34 @@ body.Fondo {
   .Botones:hover a{
     color: red;
 }
->>>>>>> master
+@media screen and (min-width: 992px) {
+  .Botones {
+    font-size: 2.5vw;
+    padding: 1vw;
+  }
+  .Botones a {
+    font-size: 2.5vw;
+    padding: 1vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Botones {
+    font-size: 2vw;
+    padding: 0.8vw;
+  }
+  .Botones a {
+    font-size: 2vw;
+    padding: 0.8vw;
+  }
+}
+
+.Botones:hover a {
+  color: red;
+}
+
+
+
+
+
+
