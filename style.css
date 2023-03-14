@@ -1285,7 +1285,7 @@ p {
       }
   }
   
-=======
+
 @media(max-width: 768px) {
     .form-mainPropie {
         padding: 40px 15px;
@@ -1346,7 +1346,7 @@ section.menus>div {
 }
 
 section.menus .btnEditar {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 /* Ocultar el formulario por defecto */
@@ -1443,10 +1443,7 @@ section.menus .btnEditar {
     font-size: 16px;
 }
 
-.iconoIniPropi {
-    display: block; /* para que la imagen ocupe todo el ancho del contenedor */
-    margin: 10px auto; /* para aplicar un margen de 10px y centrar verticalmente */
-}
+
 /* Estilos para dispositivos móviles */
 
 @media (max-width: 767px) {
@@ -1455,7 +1452,6 @@ section.menus .btnEditar {
         display: none;
     }
 }
-<<<<<<< HEAD
 @media(max-width: 576px) {
     .dropdown_menu {
         left: 2rem;
@@ -1465,10 +1461,6 @@ section.menus .btnEditar {
 
 
 
-
-
-=======
->>>>>>> 414225092f67c4d4f3bfa6113b492f68ef4b306d
 /*Login administrador*/
 
 .loginAdministrador {
@@ -1830,7 +1822,6 @@ body.Fondo {
   .Botones:hover a{
     color: red;
 }
-<<<<<<< HEAD
 
 /* milocal interfaz */
 
@@ -1943,7 +1934,7 @@ body.Fondo {
     }
     
   }
-=======
+
 @media screen and (min-width: 992px) {
   .Botones {
     font-size: 2.5vw;
@@ -1975,4 +1966,3 @@ body.Fondo {
 
 
 
->>>>>>> 414225092f67c4d4f3bfa6113b492f68ef4b306d
