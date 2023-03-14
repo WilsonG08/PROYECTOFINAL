@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <title>MiLocal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="miLocal">
+    <header class="inicioPropietarioHer">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">JOSMAWI</a>
+            </div>
+            <ul class="links">
+                <li><a href="/inicioPropietario.html">Home</a></li>
+                <li><a href="/miLocal.html">Mi local</a></li>
+            </ul>
+            <a href="/index.html" class="action_btn">Salir</a>
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="/inicioPropietario.html">Home</a></li>
+            <li><a href="/miLocal.html">Mi local</a></li>
+            <a href="/index.html" class="action_btn">Salir</a>
+        </div>
+    </header>
+
+    <section class="miLocal">
+        <div class="containerMiLocal">
+            <h1>MI RESTAURANTE</h3>
+            <div class="imagenMilocal">
+                <img src="/img/milocal.jpg" alt="Imagen de ejemplo">
+            </div>
+            <div class="boxMilocal">
+                <div class="cuadrado">
+                    <h2>Información del restaurante</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae mattis mauris.</p>
+                </div>
+                <div class="cuadrado1">
+                    <h2>Capacidad</h2>
+                    <p>100 personas</p>
+                </div>
+                <div class="cuadrado2">
+                    <h2>Cómo llegar</h2>
+                    <p>Av. Siempreviva 742, Springfield</p>
+                </div>
+            </div>
+        </div>
+        <button class="btnRegCli">
+            <a href="/miLocal.html">Editar</a> 
+        </button>
+    </section>
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const dropDownMenu = document.querySelector(".dropdown_menu");
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open");
+            const isOpen = dropDownMenu.classList.contains("open");
+
+            toggleBtnIcon.classList = isOpen
+                ? "fa-solid fa-xmark"
+                : "fa-solid fa-bars";
+        };
+    </script>
+</body>
+</html>

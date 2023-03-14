@@ -117,7 +117,7 @@ header {
 }
 
 .dropdown_menu.open {
-    height: 240px;
+    height: 150px;
 
 }
 
@@ -867,12 +867,22 @@ section.menus .btnEditar {
     font-size: 16px;
 }
 
+.iconoIniPropi {
+    display: block; /* para que la imagen ocupe todo el ancho del contenedor */
+    margin: 10px auto; /* para aplicar un margen de 10px y centrar verticalmente */
+}
 /* Estilos para dispositivos móviles */
 
 @media (max-width: 767px) {
 
     .links {
         display: none;
+    }
+}
+@media(max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
     }
 }
 
@@ -1134,3 +1144,115 @@ body.Fondo {
   .Botones:hover a{
     color: red;
 }
+
+/* milocal interfaz */
+
+.miLocal{
+    height: 100vh;
+    /* background-color: #000; */
+    background-color: #000000;
+}
+
+.imagenMilocal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .imagenMilocal img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 3px solid white;
+    border-radius: 16px;
+  }
+
+  .miLocal h2{
+    color: var(--tex-white);
+
+  }
+
+  .miLocal h1{
+    color: white;
+    background-color: black;
+    /* background-color: #847086; */
+    text-align: center;
+    padding: 15px;
+  }
+
+  .boxMilocal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .cuadrado, .cuadrado1, .cuadrado2 {
+    width: calc(33.33% - 10px);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-color: var(--glass-bg-color);
+    border: 1px solid var(--border-color);
+  }
+  .miLocal .btnRegCli {
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+  .miLocal .btnRegCli {
+    height: 45px;
+    width: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px;
+    background: linear-gradient(to right, var(--green), var(--lead));
+    color: var(--tex-white);
+}
+
+@media (max-width: 768px) {
+
+    .miLocal {
+      height: auto;
+      padding-bottom: 50px;
+    }
+  
+    .imagenMilocal {
+      height: auto;
+      padding: 20px;
+    }
+    
+    .boxMilocal {
+      flex-wrap: wrap;
+      margin-top: 20px;
+      padding: 20px;
+    }
+  
+    .cuadrado, .cuadrado1, .cuadrado2 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+  }
+  
+  /* Estilos para pantallas más grandes que 768px */
+  
+  @media (min-width: 768px) {
+  
+    .imagenMilocal {
+      height: 60vh;
+    }
+  
+    .boxMilocal {
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 20px;
+    }
+  
+    .cuadrado, .cuadrado1, .cuadrado2 {
+      width: calc(33.33% - 10px);
+      margin-bottom: 0;
+    }
+    
+  }
